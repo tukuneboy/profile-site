@@ -206,6 +206,9 @@
                     <label for="message" class="form-label">お問い合わせ内容 <span class="required">*</span></label>
                     <textarea id="message" name="message" class="form-textarea" rows="6" required></textarea>
                 </div>
+                 <div class="cf-turnstile"
+                    data-sitekey="0x4AAAAAACJw514EfZBaBf6x">
+                </div>
                 <button type="submit" class="form-submit">送信する</button>
             </form>
             <div class="form-message" id="formMessage"></div>
@@ -220,5 +223,7 @@
     </footer>
 
     <script src="./script.js"></script>
+    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+
 </body>
 </html>

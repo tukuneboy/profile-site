@@ -53,10 +53,12 @@ contactForm.addEventListener('submit', async e => {
 
     // Get form data
     const form = e.target;
+    const token = form.querySelector('[name="cf-turnstile-response"]').value;
     const formData = {
         name: form.name.value,
         email: form.email.value,
-        message: form.message.value
+        message: form.message.value,
+        token
     };
 
     // Basic validation
