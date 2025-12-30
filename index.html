@@ -14,7 +14,7 @@ document.getElementById("contact").addEventListener("submit", async e => {
     message: form.message.value
   };
 
-  const res = await fetch("https://contact-to-slack.yourname.workers.dev", {
+  const res = await fetch("https://shiny-waterfall-315a.seiji-ono-0000.workers.dev", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(data)
