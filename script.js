@@ -74,35 +74,6 @@ contactForm.addEventListener('submit', async e => {
         return;
     }
 
-    // Simulate form submission (in real application, this would send data to a server)
-    // For static website, you can integrate with services like Formspree, EmailJS, or similar
-    // console.log('Form submitted:', formData);
-
-    // Show success message
-    // showMessage('お問い合わせを受け付けました。ありがとうございます。', 'success');
-
-    // Reset form
-    // contactForm.reset();
-
-    // In a real application, you would use fetch() to send data to a backend:
-    /*
-    fetch('/api/contact', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
-    })
-    .then(response => response.json())
-    .then(data => {
-        showMessage('お問い合わせを受け付けました。ありがとうございます。', 'success');
-        contactForm.reset();
-    })
-    .catch(error => {
-        showMessage('送信中にエラーが発生しました。もう一度お試しください。', 'error');
-    });
-    */
-
     const res = await fetch("https://api.gwat.jp/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
