@@ -103,7 +103,7 @@ contactForm.addEventListener('submit', async e => {
     });
     */
 
-    const res = await fetch("https://shiny-waterfall-315a.seiji-ono-0000.workers.dev", {
+    const res = await fetch("https://api.gwat.jp/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData)
