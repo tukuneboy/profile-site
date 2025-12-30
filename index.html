@@ -1,229 +1,233 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="福岡を拠点としたITエンジニア GWAT - ITコンサルティング、WEBアプリケーション開発、インフラ構築">
-    <title>GWAT - 福岡を拠点としたITエンジニア</title>
-    <link rel="stylesheet" href="./style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="福岡を拠点としたITエンジニア GWAT - ITコンサルティング、WEBアプリケーション開発、インフラ構築">
+  <title>GWAT - 福岡を拠点としたITエンジニア</title>
+  <link rel="stylesheet" href="./style.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Roboto:wght@300;400;500;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
 </head>
+
 <body>
-    <!-- Header -->
-    <header class="header">
-        <nav class="nav">
-            <div class="nav-logo">GWAT</div>
-            <button class="nav-toggle" id="navToggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <ul class="nav-menu" id="navMenu">
-                <li><a href="#hero" class="nav-link">HOME</a></li>
-                <li><a href="#service" class="nav-link">SERVICE</a></li>
-                <li><a href="#profile" class="nav-link">PROFILE</a></li>
-                <li><a href="#skills" class="nav-link">SKILLS</a></li>
-                <li><a href="#works" class="nav-link">WORKS</a></li>
-                <li><a href="#contact" class="nav-link">CONTACT</a></li>
+  <!-- Header -->
+  <header class="header">
+    <nav class="nav">
+      <div class="nav-logo">GWAT</div>
+      <button class="nav-toggle" id="navToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#hero" class="nav-link">HOME</a></li>
+        <li><a href="#service" class="nav-link">SERVICE</a></li>
+        <li><a href="#profile" class="nav-link">PROFILE</a></li>
+        <li><a href="#skills" class="nav-link">SKILLS</a></li>
+        <li><a href="#works" class="nav-link">WORKS</a></li>
+        <li><a href="#contact" class="nav-link">CONTACT</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero">
+    <div class="hero-content">
+      <p class="hero-subtitle">福岡を拠点としたITエンジニア</p>
+      <h1 class="hero-title">GWAT</h1>
+      <p class="hero-description">ITの専門家としての立場から、御社の相談役として、<br>ITに関する初歩的な疑問から業務効率化へのアドバイスまで<br>幅広くサポートいたします。</p>
+      <a href="#contact" class="hero-btn">お問い合わせ</a>
+    </div>
+    <div class="hero-scroll">
+      <span>SCROLL</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- Service Section -->
+  <section id="service" class="service">
+    <div class="container">
+      <h2 class="section-title">SERVICE</h2>
+      <div class="service-grid">
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-lightbulb"></i>
+          </div>
+          <h3 class="service-card-title">ITコンサルティング</h3>
+          <p class="service-card-text">GWATでは様々な技術領域において、ITを通してお客様の課題解決に貢献することが可能です。Webサイト制作、アプリ開発など、お気軽にご相談ください。</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-code"></i>
+          </div>
+          <h3 class="service-card-title">WEBアプリケーションの開発</h3>
+          <p class="service-card-text">最新のフレームワークを活かしたSPAサイトからモバイルアプリケーションまで、幅広いシステム開発が可能です。</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-file-excel"></i>
+          </div>
+          <h3 class="service-card-title">Excel, Accessによるアプリケーション開発</h3>
+          <p class="service-card-text">普段の業務で使用する、Excel/Accessをベースとした業務アプリケーションは、低コストでの導入が可能で、使い慣れた画面での作業が可能です。</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-server"></i>
+          </div>
+          <h3 class="service-card-title">中小規模インフラの構築</h3>
+          <p class="service-card-text">Windows, Linuxによるサーバー/クライアント環境の構築を行います。お客様の課題・予算に沿ったご提案が可能です。</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-network-wired"></i>
+          </div>
+          <h3 class="service-card-title">拠点間VPNによるネットワークの構築</h3>
+          <p class="service-card-text">事業が拡大した時に問題となる、拠点間でのデータ共有や安全な通信環境の構築を、インターネットVPNによって低コストで構築できます。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Profile Section -->
+  <section id="profile" class="profile">
+    <div class="container">
+      <h2 class="section-title">PROFILE</h2>
+      <div class="profile-content">
+        <div class="profile-info">
+          <h3 class="profile-name">GWAT</h3>
+          <p class="profile-position">代表 大野清司</p>
+          <p class="profile-location">福岡県出身</p>
+          <div class="profile-description">
+            <p>福岡の大学を卒業後、大手SIerを経て、フリーエンジニアとして独立。</p>
+            <p>これまで学んだITスキルと、プログラミングを始めとする様々幅広い知見を活かし、様々な業種の中小企業のITアドバイザーとしても活躍中。</p>
+            <p>本人がエンジニアでありプロジェクトマネージャーでもある事から、IT技術を駆使した戦略立案と計画を得意とする。</p>
+            <p>プログラミングとお酒が好き、週0勤務でワイドショーを見ることを日課にするのが目標。</p>
+          </div>
+          <div class="profile-certifications">
+            <h4>保有資格</h4>
+            <ul>
+              <li><i class="fas fa-certificate"></i> テクニカルエンジニア（ネットワーク）</li>
+              <li><i class="fas fa-certificate"></i> テクニカルエンジニア（情報セキュリティ）</li>
+              <li><i class="fas fa-certificate"></i> 第二種電気工事士</li>
             </ul>
-        </nav>
-    </header>
-
-    <!-- Hero Section -->
-    <section id="hero" class="hero">
-        <div class="hero-content">
-            <p class="hero-subtitle">福岡を拠点としたITエンジニア</p>
-            <h1 class="hero-title">GWAT</h1>
-            <p class="hero-description">ITの専門家としての立場から、御社の相談役として、<br>ITに関する初歩的な疑問から業務効率化へのアドバイスまで<br>幅広くサポートいたします。</p>
-            <a href="#contact" class="hero-btn">お問い合わせ</a>
+          </div>
         </div>
-        <div class="hero-scroll">
-            <span>SCROLL</span>
-            <div class="scroll-line"></div>
-        </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <!-- Service Section -->
-    <section id="service" class="service">
-        <div class="container">
-            <h2 class="section-title">SERVICE</h2>
-            <div class="service-grid">
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-lightbulb"></i>
-                    </div>
-                    <h3 class="service-card-title">ITコンサルティング</h3>
-                    <p class="service-card-text">GWATでは様々な技術領域において、ITを通してお客様の課題解決に貢献することが可能です。Webサイト制作、アプリ開発など、お気軽にご相談ください。</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-code"></i>
-                    </div>
-                    <h3 class="service-card-title">WEBアプリケーションの開発</h3>
-                    <p class="service-card-text">最新のフレームワークを活かしたSPAサイトからモバイルアプリケーションまで、幅広いシステム開発が可能です。</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-file-excel"></i>
-                    </div>
-                    <h3 class="service-card-title">Excel, Accessによるアプリケーション開発</h3>
-                    <p class="service-card-text">普段の業務で使用する、Excel/Accessをベースとした業務アプリケーションは、低コストでの導入が可能で、使い慣れた画面での作業が可能です。</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-server"></i>
-                    </div>
-                    <h3 class="service-card-title">中小規模インフラの構築</h3>
-                    <p class="service-card-text">Windows, Linuxによるサーバー/クライアント環境の構築を行います。お客様の課題・予算に沿ったご提案が可能です。</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-network-wired"></i>
-                    </div>
-                    <h3 class="service-card-title">拠点間VPNによるネットワークの構築</h3>
-                    <p class="service-card-text">事業が拡大した時に問題となる、拠点間でのデータ共有や安全な通信環境の構築を、インターネットVPNによって低コストで構築できます。</p>
-                </div>
-            </div>
+  <!-- Skills Section -->
+  <section id="skills" class="skills">
+    <div class="container">
+      <h2 class="section-title">SKILLS</h2>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3 class="skill-category-title"><i class="fas fa-laptop-code"></i> 言語</h3>
+          <p class="skill-list">JavaScript, Python, PHP, VBA, HTML, CSS, 等</p>
         </div>
-    </section>
-
-    <!-- Profile Section -->
-    <section id="profile" class="profile">
-        <div class="container">
-            <h2 class="section-title">PROFILE</h2>
-            <div class="profile-content">
-                <div class="profile-info">
-                    <h3 class="profile-name">GWAT</h3>
-                    <p class="profile-position">代表 大野清司</p>
-                    <p class="profile-location">福岡県出身</p>
-                    <div class="profile-description">
-                        <p>福岡の大学を卒業後、大手SIerを経て、フリーエンジニアとして独立。</p>
-                        <p>これまで学んだITスキルと、プログラミングを始めとする様々幅広い知見を活かし、様々な業種の中小企業のITアドバイザーとしても活躍中。</p>
-                        <p>本人がエンジニアでありプロジェクトマネージャーでもある事から、IT技術を駆使した戦略立案と計画を得意とする。</p>
-                        <p>プログラミングとお酒が好き、週0勤務でワイドショーを見ることを日課にするのが目標。</p>
-                    </div>
-                    <div class="profile-certifications">
-                        <h4>保有資格</h4>
-                        <ul>
-                            <li><i class="fas fa-certificate"></i> テクニカルエンジニア（ネットワーク）</li>
-                            <li><i class="fas fa-certificate"></i> テクニカルエンジニア（情報セキュリティ）</li>
-                            <li><i class="fas fa-certificate"></i> 第二種電気工事士</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+        <div class="skill-category">
+          <h3 class="skill-category-title"><i class="fas fa-layer-group"></i> FrameWork</h3>
+          <p class="skill-list">React, AngularJS, Bootstrap</p>
         </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-        <div class="container">
-            <h2 class="section-title">SKILLS</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3 class="skill-category-title"><i class="fas fa-laptop-code"></i> 言語</h3>
-                    <p class="skill-list">JavaScript, Python, PHP, VBA, HTML, CSS, 等</p>
-                </div>
-                <div class="skill-category">
-                    <h3 class="skill-category-title"><i class="fas fa-layer-group"></i> FrameWork</h3>
-                    <p class="skill-list">React, AngularJS, Bootstrap</p>
-                </div>
-                <div class="skill-category">
-                    <h3 class="skill-category-title"><i class="fas fa-database"></i> DB</h3>
-                    <p class="skill-list">MySQL, Oracle</p>
-                </div>
-                <div class="skill-category">
-                    <h3 class="skill-category-title"><i class="fas fa-tools"></i> その他</h3>
-                    <p class="skill-list">Windows、Linuxサーバー/クライアントの設計/構築、中小規模のLAN設計/構築、VPNルーターによる通信環境構築にも対応可能です。</p>
-                </div>
-            </div>
+        <div class="skill-category">
+          <h3 class="skill-category-title"><i class="fas fa-database"></i> DB</h3>
+          <p class="skill-list">MySQL, Oracle</p>
         </div>
-    </section>
-
-    <!-- Works Section -->
-    <section id="works" class="works">
-        <div class="container">
-            <h2 class="section-title">WORKS</h2>
-            <div class="works-content">
-                <div class="work-category">
-                    <h3 class="work-category-title">WEBアプリケーション</h3>
-                    <div class="work-item">
-                        <h4 class="work-title">小売業向け在庫管理システム（棚卸、入庫、出庫、調達等）</h4>
-                        <p class="work-tech">開発環境: React, JavaScript, Laravel, PHP, HTML, CSS, MySQL</p>
-                    </div>
-                    <div class="work-item">
-                        <h4 class="work-title">獣医師用大動物電子カルテシステムの開発</h4>
-                        <p class="work-tech">開発環境: Windows Server, Oracle, ClassicASP, HTML, CSS, JavaScript</p>
-                    </div>
-                    <div class="work-item">
-                        <h4 class="work-title">家畜診療所 医療品在庫管理システム</h4>
-                        <p class="work-tech">開発環境: Windows Server, Oracle, AngularJS, PHP</p>
-                    </div>
-                    <div class="work-item">
-                        <h4 class="work-title">ショッピングモール用商品情報作成補助ツール</h4>
-                        <p class="work-tech">開発環境: Firebase, React</p>
-                    </div>
-                </div>
-                <div class="work-category">
-                    <h3 class="work-category-title">業務アプリケーション</h3>
-                    <div class="work-item">
-                        <p class="work-title-simple">Microsoft Access, Microsoft Excelによる業務アプリケーション開発</p>
-                    </div>
-                    <div class="work-item">
-                        <p class="work-title-simple">Google Spreadsheetsによる業務アプリケーション開発</p>
-                    </div>
-                    <div class="work-item">
-                        <p class="work-title-simple">LINE チャットボットの開発</p>
-                    </div>
-                </div>
-                <div class="work-category">
-                    <h3 class="work-category-title">その他</h3>
-                    <div class="work-item">
-                        <h4 class="work-title">拠点間VPN通信網の構築</h4>
-                        <p class="work-tech">使用機器: アライドテレシスARシリーズ</p>
-                    </div>
-                </div>
-            </div>
+        <div class="skill-category">
+          <h3 class="skill-category-title"><i class="fas fa-tools"></i> その他</h3>
+          <p class="skill-list">Windows、Linuxサーバー/クライアントの設計/構築、中小規模のLAN設計/構築、VPNルーターによる通信環境構築にも対応可能です。</p>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">CONTACT</h2>
-            <p class="contact-description">ご質問、ご相談は下記のフォームよりお問い合わせ下さい。</p>
-            <form class="contact-form" id="contactForm">
-                <div class="form-group">
-                    <label for="name" class="form-label">お名前 <span class="required">*</span></label>
-                    <input type="text" id="name" name="name" class="form-input" required>
-                </div>
-                <div class="form-group">
-                    <label for="email" class="form-label">メールアドレス <span class="required">*</span></label>
-                    <input type="email" id="email" name="email" class="form-input" required>
-                </div>
-                <div class="form-group">
-                    <label for="message" class="form-label">お問い合わせ内容 <span class="required">*</span></label>
-                    <textarea id="message" name="message" class="form-textarea" rows="6" required></textarea>
-                </div>
-                 <div class="cf-turnstile"
-                    data-sitekey="0x4AAAAAACJw514EfZBaBf6x">
-                </div>
-                <button type="submit" class="form-submit">送信する</button>
-            </form>
-            <div class="form-message" id="formMessage"></div>
+  <!-- Works Section -->
+  <section id="works" class="works">
+    <div class="container">
+      <h2 class="section-title">WORKS</h2>
+      <div class="works-content">
+        <div class="work-category">
+          <h3 class="work-category-title">WEBアプリケーション</h3>
+          <div class="work-item">
+            <h4 class="work-title">小売業向け在庫管理システム（棚卸、入庫、出庫、調達等）</h4>
+            <p class="work-tech">開発環境: React, JavaScript, Laravel, PHP, HTML, CSS, MySQL</p>
+          </div>
+          <div class="work-item">
+            <h4 class="work-title">獣医師用大動物電子カルテシステムの開発</h4>
+            <p class="work-tech">開発環境: Windows Server, Oracle, ClassicASP, HTML, CSS, JavaScript</p>
+          </div>
+          <div class="work-item">
+            <h4 class="work-title">家畜診療所 医療品在庫管理システム</h4>
+            <p class="work-tech">開発環境: Windows Server, Oracle, AngularJS, PHP</p>
+          </div>
+          <div class="work-item">
+            <h4 class="work-title">ショッピングモール用商品情報作成補助ツール</h4>
+            <p class="work-tech">開発環境: Firebase, React</p>
+          </div>
         </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2025 GWAT. All rights reserved.</p>
+        <div class="work-category">
+          <h3 class="work-category-title">業務アプリケーション</h3>
+          <div class="work-item">
+            <p class="work-title-simple">Microsoft Access, Microsoft Excelによる業務アプリケーション開発</p>
+          </div>
+          <div class="work-item">
+            <p class="work-title-simple">Google Spreadsheetsによる業務アプリケーション開発</p>
+          </div>
+          <div class="work-item">
+            <p class="work-title-simple">LINE チャットボットの開発</p>
+          </div>
         </div>
-    </footer>
+        <div class="work-category">
+          <h3 class="work-category-title">その他</h3>
+          <div class="work-item">
+            <h4 class="work-title">拠点間VPN通信網の構築</h4>
+            <p class="work-tech">使用機器: アライドテレシスARシリーズ</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <script src="./script.js"></script>
-    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2 class="section-title">CONTACT</h2>
+      <p class="contact-description">ご質問、ご相談は下記のフォームよりお問い合わせ下さい。</p>
+      <form class="contact-form" id="contactForm">
+        <div class="form-group">
+          <label for="name" class="form-label">お名前 <span class="required">*</span></label>
+          <input type="text" id="name" name="name" class="form-input" required>
+        </div>
+        <div class="form-group">
+          <label for="email" class="form-label">メールアドレス <span class="required">*</span></label>
+          <input type="email" id="email" name="email" class="form-input" required>
+        </div>
+        <div class="form-group">
+          <label for="message" class="form-label">お問い合わせ内容 <span class="required">*</span></label>
+          <textarea id="message" name="message" class="form-textarea" rows="6" required></textarea>
+        </div>
+        <div class="cf-turnstile" data-sitekey="0x4AAAAAACJw514EfZBaBf6x">
+        </div>
+        <button type="submit" class="form-submit">送信する</button>
+      </form>
+      <div class="form-message" id="formMessage"></div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 GWAT. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="./script.js"></script>
+  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
 
 </body>
+
 </html>
